@@ -62,7 +62,7 @@ public class timerTask {
     public static void main(String args[]){
     	TestLogger.writeLog("Main: Start");
 		/*
-			This is just a demonstration of a task will be running separately while the main task is in sleep state.
+			This is just a demonstration of a task which will be running separately while the main task is in sleep state.
 			The two time settings below are important.
 			The process will sleep for 10 seconds.
 			The total time taken for the task will be 8 seconds. So the task will be done before the sleep is over.
