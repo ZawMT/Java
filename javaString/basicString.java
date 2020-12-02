@@ -34,6 +34,20 @@ public class basicString {
 		System.out.println(String.format("strJava.startsWith(\"v\", 2) => %s.", strJava.startsWith("v", 2)));
 		System.out.println(String.format("strJava.startsWith(\"J\", 2) => %s.", strJava.startsWith("J", 2)));	
 		
+		System.out.println("======= Notable String Behaviours =======");
+		String strJava4 = strJava3.substring(0,4);
+		System.out.println(String.format("strJava4 => strJava3.substring(0,4) => %s", strJava4));
+		System.out.println(String.format("strJava4.equals(\"Java\") => %s.", strJava4.equals("Java")));
+		System.out.println(String.format("strJava4.equals(strJava) => %s.", strJava4.equals(strJava)));
+		System.out.println(String.format("Notable behaviour 1: strJava4 == \"Java\" => %s : This is a new string although the value is the same.", strJava4 == "Java"));
+		System.out.println(String.format("Notable behaviour 2: strJava4 == strJava => %s : This is a new string although the value is the same.", strJava4 == strJava));
+		String strJava5 = strJava.substring(0,4);
+		System.out.println(String.format("strJava5 => strJava.substring(0,4) => %s", strJava5));
+		System.out.println(String.format("strJava5.equals(\"Java\") => %s.", strJava5.equals("Java")));
+		System.out.println(String.format("strJava5.equals(strJava) => %s.", strJava5.equals(strJava)));
+		System.out.println(String.format("Notable behaviour 3: strJava5 == \"Java\" => %s : This is NOT a new string.", strJava5 == "Java"));
+		System.out.println(String.format("Notable behaviour 4: strJava5 == strJava => %s : This is NOT a new string.", strJava5 == strJava));
+		
 		System.out.println("=======*******=======");
 	}
 }
