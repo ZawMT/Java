@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class timerTask {
+public class javaTimerTask {
 	private static Timer timerCheck;
 	
 	public static class TestLogger {
